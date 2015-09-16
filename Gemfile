@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # rspec test
+  gem "rspec-rails", "~> 3.2.1"
 end
 
 group :development do
@@ -42,5 +45,12 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+group :test do
+  # capybara!
+  gem "capybara", "~> 2.4"
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
