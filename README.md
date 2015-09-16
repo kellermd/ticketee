@@ -1,0 +1,1 @@
+ticketee project source as working through Rails 4 book
