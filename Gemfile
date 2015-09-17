@@ -37,7 +37,7 @@ group :development, :test do
   gem 'byebug'
 
   # rspec test
-  gem "rspec-rails", "~> 3.2.1"
+  gem "rspec-rails" #, "~> 3.2.1"
 end
 
 group :development do
@@ -47,7 +47,8 @@ end
 
 group :test do
   # capybara!
-  gem "capybara", "~> 2.4"
+  gem "capybara" #, "~> 2.4"
+  gem "factory_girl_rails" #, "~> 4.5"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
