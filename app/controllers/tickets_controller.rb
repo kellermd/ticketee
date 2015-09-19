@@ -7,18 +7,31 @@ before_action :set_ticket, only: [:show, :edit, :update, :destroy]
     @ticket = @project.tickets.build
   end
 
-def create
-  @ticket = @project.tickets.build(ticket_params)
-  if @ticket.save
-    flash[:notice] = "Ticket has been created."
-    redirect_to [@project, @ticket]
-  else
-    flash.now[:alert] = "Ticket has not been created."
-    render "new"
+  def create
+    @ticket = @project.tickets.build(ticket_params)
+    if @ticket.save
+      flash[:notice] = "Ticket has been created."
+      redirect_to [@project, @ticket]
+    else
+      flash.now[:alert] = "Ticket has not been created."
+      render "new"
+    end
   end
-end
 
-private
+  def edit
+    
+  end
+
+  def update
+    if @ticket.update(ticket_params)
+      flash[:notice] = "Ticket has been updated."
+      redirect_to [@project, @ticket]
+    else
+      flash.now[:alert] = "Ticket has not been updated."
+      render "edit"
+    end
+  end
+
 
 private
   def set_project
