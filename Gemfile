@@ -32,13 +32,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "tzinfo-data"
+
 gem "bootstrap-sass", "~> 3.3"
 gem "font-awesome-rails", "~> 4.3"
 gem "simple_form", "~> 3.1.0"
-
-gem "tzinfo-data"
-
-gem "devise" #, "~> 3.4.1"
+gem "devise", "~> 3.4.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,7 +49,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem "rspec-rails" #, "~> 3.2.1"
+  gem "rspec-rails", "~> 3.2.1"
 end
 
 group :test do
