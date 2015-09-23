@@ -26,4 +26,5 @@ RSpec.feature "Admins can change a user's details" do
     expect(page).to have_content "User has been updated."
     expect(page).to have_content "#{user.email} (Admin)"
   end
+
 end

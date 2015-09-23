@@ -27,4 +27,5 @@ RSpec.feature "Admins can create new users" do
     expect(page).to have_content "User has been created."
     expect(page).to have_content "admin@example.com (Admin)"
   end
+
 end
