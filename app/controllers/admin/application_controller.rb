@@ -5,7 +5,7 @@ class Admin::ApplicationController < ApplicationController
   def index
   end
 
-  private
+private
   def authorize_admin!
     authenticate_user!
     unless current_user.admin?

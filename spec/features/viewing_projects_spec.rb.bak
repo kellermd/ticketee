@@ -21,4 +21,5 @@ RSpec.feature "Users can view projects" do
     visit "/"
     expect(page).not_to have_content "Hidden"
   end
+
 end
