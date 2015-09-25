@@ -15,5 +15,4 @@ class ProjectPolicy < ApplicationPolicy
   def update?
     user.try(:admin?) || record.has_manager?(user)
   end
-  
 end
